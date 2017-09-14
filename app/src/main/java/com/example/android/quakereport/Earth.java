@@ -10,7 +10,7 @@ public class Earth {
     //Location
     private String city;
     // date
-    private String date;
+    private Long time;
 
     /**
      *
@@ -18,11 +18,11 @@ public class Earth {
      * @param mCity Location
      * @param mDate When it occured
      */
-    public Earth(double mMag,String mCity,String mDate)
+    public Earth(double mMag,String mCity,Long mTime)
     {
         Magnitude=mMag;
         city=mCity;
-        date=mDate;
+        time=mTime;
     }
 
     /**
@@ -47,9 +47,9 @@ public class Earth {
      *
      * @return Date
      */
-    public String getdate()
+    public Long getTime()
     {
-        return date;
+        return time;
     }
 
 }

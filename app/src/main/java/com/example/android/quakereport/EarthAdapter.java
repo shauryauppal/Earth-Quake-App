@@ -19,20 +19,18 @@ import java.util.ArrayList;
 
 public class EarthAdapter extends ArrayAdapter<Earth> {
 
-   public EarthAdapter(Activity context, ArrayList<Earth> earthquakes)
-   {
-       super(context,0,earthquakes);
-   }
+    public EarthAdapter(Activity context, ArrayList<Earth> earthquakes) {
+        super(context, 0, earthquakes);
+    }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View v =convertView;
-        if(v==null)
-        {
+        View v = convertView;
+        if (v == null) {
             LayoutInflater vi;
             vi = LayoutInflater.from(getContext());
-            v= vi.inflate(R.layout.list_item,parent,false);
+            v = vi.inflate(R.layout.list_item, parent, false);
         }
 
         //Listitem position
@@ -48,7 +46,7 @@ public class EarthAdapter extends ArrayAdapter<Earth> {
 
         //For date
         TextView Date = (TextView) v.findViewById(R.id.date);
-        Date.setText(currentdata.getdate());
+        Date.setText(String.valueOf(currentdata.getTime()));
 
         return v;
 
