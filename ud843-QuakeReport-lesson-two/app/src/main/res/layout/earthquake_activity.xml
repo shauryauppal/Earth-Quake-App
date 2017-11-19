@@ -13,8 +13,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <string name="app_name">Quake Report</string>
-    <string name="no_earthquakes">No earthquakes found</string>
-    <string name="no_internet_conection">NO INTERNET CONNECTION</string>
-</resources>
+<!-- Layout for a list of earthquakes -->
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:dividerHeight="0dp"/>

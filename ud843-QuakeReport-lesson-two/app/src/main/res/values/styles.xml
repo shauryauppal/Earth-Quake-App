@@ -14,7 +14,12 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Quake Report</string>
-    <string name="no_earthquakes">No earthquakes found</string>
-    <string name="no_internet_conection">NO INTERNET CONNECTION</string>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>

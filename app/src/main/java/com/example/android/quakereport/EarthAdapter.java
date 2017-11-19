@@ -14,14 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.graphics.drawable.GradientDrawable;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.TextView;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -62,7 +54,7 @@ public class EarthAdapter extends ArrayAdapter<Earth> {
 
         // Get the appropriate background color based on the current earthquake magnitude
         int magnitudeColor = getMagnitudeColor(currentdata.getMagnitude());
-        Log.e("Error","Check->"+currentdata.getMagnitude()+" Color->"+magnitudeColor);
+        //Log.e("Error","Check->"+currentdata.getMagnitude()+" Color->"+magnitudeColor);
         // Set the color on the magnitude circle
         magnitudeCircle.setColor(magnitudeColor);
 
